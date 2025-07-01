@@ -1,17 +1,5 @@
 # InviZible Pro
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/gedsh/invizible?style=plastic)
-![GitHub Releases](https://img.shields.io/github/downloads/gedsh/invizible/latest/total?color=blue&style=plastic)
-[![Translation status](https://hosted.weblate.org/widgets/invizible/-/invizible/svg-badge.svg)](https://hosted.weblate.org/engage/invizible/?utm_source=widget)
-
-### [Google Play stable version](https://play.google.com/store/apps/details?id=pan.alexander.tordnscrypt.gp)
-
-### [Download the latest version from GitHub](https://github.com/Gedsh/InviZible/releases/latest)
-
-### [IzzyOnDroid F-Droid beta version](https://apt.izzysoft.de/fdroid/index/apk/pan.alexander.tordnscrypt)
-
-### [F-Droid stable version](https://f-droid.org/packages/pan.alexander.tordnscrypt.stable/)
-
 ## Android application for online privacy and security
 
 *Preserves privacy, prevents tracking, and provides access to restricted and hidden online content*
@@ -133,11 +121,6 @@ project(':filepicker').projectDir = new File('android-filepicker/filepicker')
 It is expected that you can solve build problems yourself, so there is no support for building. 
 If you cannot build yourself, there are prebuilt versions of **InviZible Pro** available [here](https://github.com/Gedsh/InviZible/releases/latest).
 
-#### Translating
-
-[Translate InviZible on Hosted Weblate](https://hosted.weblate.org/engage/invizible/).
-
-[![Translation status](https://hosted.weblate.org/widgets/invizible/-/multi-auto.svg)](https://hosted.weblate.org/engage/invizible/?utm_source=widget)
 
 ## Attribution
 
@@ -154,21 +137,6 @@ InviZible Pro uses:
 
 This product is produced independently from the **Tor®**, **DNSCrypt**, **Purple I2P** software 
 and carries no guarantee from The Above Projects about quality, suitability or anything else.
-
-## Donations
-**Patreon**: https://www.patreon.com/inviziblepro
-
-**BTC**: 1GfJwiHG6xKCQCpHeW6fELzFfgsvcSxVUR
-
-**LTC**: MUSAXkcAvnN1Ytauzeo9bwjVjarUdDHGgk
-
-**BCH**: qzl4w4ahh7na2z23056qawwdyuclkgty5gc4q8tw88
-
-**USDT**: 0xdA1Dd53FE6501140E3Dcd5134323dfccF20aD536
-
-**XLM**: GBID6I3VYR4NIFLZWI3MEQH3M2H72COC3HQDI5WMYYQGAC3TE55TSKAX
-
-**XMR** 82WFzofvGUdY52w9zCfrZWaHVqEDcJH7y1FujzvXdGPeU9UpuFNeCvtCKhtpC6pZmMYuCNgFjcw5mHAgEJQ4RTwV9XRhobX
 
 ## License
 
