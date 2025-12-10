@@ -1367,3 +1367,81 @@
 * Updated default bridges.
 * Updated Spanish and Arabic translations.
 * Fixes and optimizations.
+
+**InviZible Pro stable 7.2.0**
+* Updated DNSCrypt to version 2.1.12.
+* Updated Purple I2P to version 2.57.0.
+* Updated Tor obfuscators: WebTunnel, SnowFlake.
+* Optimized Tor connection on unstable networks.
+* Implemented display of ping of DNSCrypt servers and relays.
+* Implemented displaying ping >> 1s if a bridge is marked as down by Tor.
+* Fixed support for dual apps.
+* Fixed requesting Tor bridges for Android 9 and below in countries with hard censorship.
+* Updated translations.
+* Fixes and optimizations.
+
+**InviZible Pro beta 2.5.4**
+* Implemented SNI spoofing for webtunnel bridges (does not work with all bridges).
+* Fixes and optimizations.
+
+**InviZible Pro beta 2.5.5**
+* Updated Tor to version 4.8.17.
+* Fixes related to SNI spoofing for webtunnel bridges.
+* Updated Persian, Polish and Tamil translations.
+* Fixes and optimizations.
+
+**InviZible Pro beta 2.5.6**
+* Updated Tor.
+* Updated Tor Conjure obfuscator.
+* Updated default Conjure bridges.
+* Fixed ping check for Conjure bridges.
+* Fixes and optimizations.
+
+**InviZible Pro beta 2.5.7**
+* Updated DNSCrypt to version 2.1.13.
+* Updated Tor SnowFlake obfuscator.
+* Added an option to control fast network switching.
+* Updated German, Spanish and Ukrainian translations.
+* Fixes and optimizations.
+
+**InviZible Pro beta 2.5.8**
+* Updated DNSCrypt to version 2.1.14.
+* Updated Purple I2P to version 2.58.0.
+* Updated Turkish, Arabic, Spanish and Greek translations.
+* Fixes and optimizations.
+
+**InviZible Pro beta 2.5.9**
+* Updated Tor to version 4.8.18.
+* Updated SnowFlake and WebTunnel obfuscators.
+* Updated default DNSCrypt servers.
+* Disabled fast network switching for Pixel devices running Android 16.
+* Fixed adding webtunnel bridges with a predefined IP address.
+* Fixed adding webtunnel bridges with a port in the URL.
+* Ensured compatibility with 16KB memory page size.
+* Updated Persian, Italian and Spanish translations.
+* Fixes and optimizations.
+
+**InviZible Pro beta 2.6.0**
+* Fixes related to SNI spoofing for vanilla bridges.
+
+**InviZible Pro beta 2.6.1**
+* Fixed changing SNI from the Fast settings.
+* Fixed syntax checking for webtunnel bridges.
+* Fixed adding a bunch of bridges that are prepended with "bridge" word.
+* Fixed DNSCrypt rules counter.
+
+**InviZible Pro stable 7.3.0**
+* Updated DNSCrypt to version 2.1.14.
+* Updated Tor to version 4.8.18.
+* Updated Purple I2P to version 2.58.0.
+* Updated Tor obfuscators.
+* Added an option to control fast network switching.
+* Disabled fast network switching for Pixel devices running Android 16.
+* Ensured compatibility with 16KB memory page size.
+* Updated translations.
+* Fixes and optimizations.
+
+**InviZible Pro beta 2.6.2**
+* Updated Tor to version 4.8.19.
+* Updated Tor Lyrebird obfuscator.
+* Fixes and optimizations.
