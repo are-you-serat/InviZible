@@ -763,33 +763,52 @@ public class PreferencesTorBridges extends Fragment implements View.OnClickListe
     }
 
     private void removeAllBridges() {
-        final Context context = getActivity();
-        if (context == null) {
-            return;
-        }
+        if (!isAdded()) return;
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(context);
-        builder.setTitle(R.string.confirm_deletion);
-        builder.setMessage(R.string.confirm_remove_all_bridges_message);
+        Context context = requireContext();
 
-        builder.setPositiveButton(getText(R.string.yes), (dialogInterface, i) -> {
-            bridgesInUse.clear();
-            bridgesToDisplay.clear();
-            bridgesInappropriateType.clear();
+        new AlertDialog.Builder(context)
+                .setTitle(R.string.confirm_deletion)
+                .setMessage(R.string.confirm_remove_all_bridges_message)
+                .setPositiveButton(R.string.yes, (dialog, which) -> onConfirmRemoveAllBridges())
+                .setNegativeButton(R.string.no, null)
+                .show();
+    }
 
-            doActionAndUpdateRecycler(() -> {
-                if (tvBridgesListEmpty != null) {
-                    tvBridgesListEmpty.setVisibility(View.GONE);
-                }
-            });
+    private void onConfirmRemoveAllBridges() {
+        clearBridgesData();
+        updateUiAfterBridgesRemoved();
+        persistEmptyBridges(requireContext());
 
-            FileManager.writeToTextFile(context, bridgesCustomFilePath, new ArrayList<>(), "clear_own_bridges_tag");
+        Toast.makeText(requireContext(),
+                R.string.all_bridges_removed,
+                Toast.LENGTH_SHORT
+        ).show();
+    }
 
-            Toast.makeText(context, R.string.all_bridges_removed, Toast.LENGTH_SHORT).show();
+    private void clearBridgesData() {
+        bridgesInUse.clear();
+        bridgesToDisplay.clear();
+        bridgesInappropriateType.clear();
+    }
+
+    private void updateUiAfterBridgesRemoved() {
+        if (!isAdded()) return;
+
+        doActionAndUpdateRecycler(() -> {
+            if (tvBridgesListEmpty != null) {
+                tvBridgesListEmpty.setVisibility(View.GONE);
+            }
         });
+    }
 
-        builder.setNegativeButton(getText(R.string.no), (dialog, i) -> dialog.cancel());
-        builder.show();
+    private void persistEmptyBridges(Context context) {
+        FileManager.writeToTextFile(
+                context,
+                bridgesCustomFilePath,
+                new ArrayList<>(),
+                "clear_own_bridges_tag"
+        );
     }
 
     private void addBridges(final List<String> persistList) {
